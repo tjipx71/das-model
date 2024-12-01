@@ -3,5 +3,3 @@ pandas==2.2.3
 streamlit==1.37.1
 altair
 streamlit-option-menu
-json
-io
