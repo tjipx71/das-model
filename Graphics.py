@@ -32,7 +32,7 @@ def crear_cinta_de_opciones(opciones):
 def mostrar_gasto_anual():
     selected = crear_cinta_de_opciones([year for year in range(2012, 2024)])
 
-    gasto_anual = pd.read_csv("Gasto-Anual\Gasto-Anual-2012-2023.csv")  # Abrir archivo, ordenar y seleccionar
+    gasto_anual = pd.read_csv("Gasto-Anual/Gasto-Anual-2012-2023.csv")  # Abrir archivo, ordenar y seleccionar
     year = pd.concat([gasto_anual["Departamento"], gasto_anual["y_"+str(selected)]], axis=1)
     year = year.sort_values(by="y_"+str(selected), ascending=False)
 
